@@ -1,0 +1,8 @@
+task5_file = open('task5_file', 'w', encoding='utf=8')
+user_input = input('Enter numbers: ')
+task5_file.write(user_input)
+task5_file.close()
+task5_file = open('task5_file', 'r', encoding='utf=8')
+content = task5_file.read()
+print('Sum is: ', sum(map(int, content.split())))
+task5_file.close()
